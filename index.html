@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EndoPeak | Natural Male Vitality Support</title>
+<meta name="description" content="EndoPeak is a natural supplement formulated to support male vitality, energy, and performance. Discover the power of nature-backed ingredients.">
+<meta name="theme-color" content="#0d1b2a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#fff;color:#1a1a2e;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+
+/* HEADER */
+.header{background:#0d1b2a;padding:.75rem 1.5rem;position:sticky;top:0;z-index:100;box-shadow:0 2px 20px rgba(0,0,0,.4)}
+.header-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{font-size:1.4rem;font-weight:900;color:#fff;letter-spacing:-.02em}
+.logo span{color:#e8a020}
+.btn-header{background:#e8a020;color:#0d1b2a;font-weight:700;font-size:.85rem;padding:.55rem 1.25rem;border-radius:50px;white-space:nowrap;transition:all .2s}
+.btn-header:hover{background:#ffb830;transform:translateY(-1px)}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#0d1b2a 0%,#1a3a5c 60%,#0f2744 100%);padding:4rem 1.5rem 5rem;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(232,160,32,.12),transparent 70%);pointer-events:none}
+.hero-inner{max-width:780px;margin:0 auto;position:relative}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(232,160,32,.15);border:1px solid rgba(232,160,32,.4);color:#e8a020;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.4rem 1rem;border-radius:50px;margin-bottom:1.5rem}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:900;color:#fff;line-height:1.15;margin-bottom:1.25rem;letter-spacing:-.02em}
+.hero h1 span{color:#e8a020}
+.hero-sub{font-size:1.1rem;color:rgba(255,255,255,.75);max-width:560px;margin:0 auto 2rem;line-height:1.7}
+.btn-cta{display:inline-block;background:linear-gradient(135deg,#ff6b35,#e8520a);color:#fff;font-size:1.1rem;font-weight:800;padding:1rem 2.5rem;border-radius:60px;box-shadow:0 8px 30px rgba(255,107,53,.4);transition:all .2s;letter-spacing:.01em}
+.btn-cta:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(255,107,53,.55)}
+.btn-cta small{display:block;font-size:.7rem;font-weight:500;opacity:.85;margin-top:.2rem}
+.hero-img{margin:2.5rem auto 0;max-width:280px;filter:drop-shadow(0 20px 40px rgba(0,0,0,.5))}
+.hero-stars{display:flex;align-items:center;justify-content:center;gap:.5rem;margin-top:1.5rem;color:rgba(255,255,255,.7);font-size:.85rem}
+.stars{color:#e8a020;letter-spacing:2px}
+
+/* TRUST BAR */
+.trust-bar{background:#f8f9fa;border-bottom:1px solid #e8ecf0;padding:1.25rem 1.5rem}
+.trust-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:.6rem;font-size:.8rem;font-weight:600;color:#4a5568}
+.trust-icon{font-size:1.3rem}
+
+/* SECTION BASE */
+.section{padding:5rem 1.5rem}
+.section-inner{max-width:1100px;margin:0 auto}
+.section-label{font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#e8a020;margin-bottom:.75rem}
+.section-title{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:900;color:#0d1b2a;line-height:1.2;margin-bottom:1rem;letter-spacing:-.02em}
+.section-sub{font-size:1rem;color:#64748b;max-width:560px;line-height:1.7}
+.text-center{text-align:center}
+.text-center .section-sub{margin:0 auto}
+
+/* PROBLEM */
+.problem{background:#fff}
+.problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-top:3rem}
+.problem-text p{color:#4a5568;line-height:1.8;margin-bottom:1rem;font-size:.95rem}
+.problem-list{list-style:none;margin-top:1.5rem}
+.problem-list li{display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.875rem;font-size:.95rem;color:#1a1a2e;font-weight:500}
+.problem-list li::before{content:'✓';color:#e8a020;font-weight:900;font-size:1rem;flex-shrink:0;margin-top:.1rem}
+.problem-visual{background:linear-gradient(135deg,#0d1b2a,#1a3a5c);border-radius:1.5rem;padding:2.5rem;color:#fff;text-align:center}
+.problem-visual .stat{font-size:3rem;font-weight:900;color:#e8a020;line-height:1}
+.problem-visual .stat-label{font-size:.85rem;color:rgba(255,255,255,.7);margin-top:.35rem}
+.problem-stats{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2rem}
+
+/* BENEFITS */
+.benefits{background:#f8f9fa}
+.benefits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.benefit-card{background:#fff;border-radius:1.25rem;padding:2rem 1.5rem;border:1px solid #e8ecf0;transition:all .2s}
+.benefit-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.08);border-color:#e8a020}
+.benefit-icon{font-size:2.5rem;margin-bottom:1rem}
+.benefit-title{font-size:1rem;font-weight:700;color:#0d1b2a;margin-bottom:.5rem}
+.benefit-desc{font-size:.875rem;color:#64748b;line-height:1.6}
+
+/* HOW IT WORKS */
+.how{background:#fff}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3rem;position:relative}
+.steps::before{content:'';position:absolute;top:2rem;left:calc(16.66% + 1rem);right:calc(16.66% + 1rem);height:2px;background:linear-gradient(90deg,#e8a020,#ff6b35);z-index:0}
+.step{text-align:center;position:relative;z-index:1}
+.step-num{width:64px;height:64px;background:linear-gradient(135deg,#e8a020,#ff6b35);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:900;color:#fff;margin:0 auto 1.25rem;box-shadow:0 4px 20px rgba(232,160,32,.4)}
+.step-title{font-size:1rem;font-weight:700;color:#0d1b2a;margin-bottom:.5rem}
+.step-desc{font-size:.875rem;color:#64748b;line-height:1.6}
+
+/* INGREDIENTS */
+.ingredients{background:linear-gradient(135deg,#0d1b2a,#1a3a5c);padding:5rem 1.5rem}
+.ingredients .section-title{color:#fff}
+.ingredients .section-sub{color:rgba(255,255,255,.65)}
+.ing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3rem}
+.ing-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:1.25rem;padding:1.5rem;transition:all .2s}
+.ing-card:hover{background:rgba(232,160,32,.1);border-color:rgba(232,160,32,.4)}
+.ing-name{font-size:1rem;font-weight:700;color:#e8a020;margin-bottom:.4rem}
+.ing-desc{font-size:.8rem;color:rgba(255,255,255,.65);line-height:1.6}
+
+/* TESTIMONIALS */
+.testimonials{background:#f8f9fa}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.testi-card{background:#fff;border-radius:1.25rem;padding:1.75rem;border:1px solid #e8ecf0;box-shadow:0 2px 12px rgba(0,0,0,.04)}
+.testi-stars{color:#e8a020;font-size:.9rem;letter-spacing:2px;margin-bottom:.75rem}
+.testi-text{font-size:.9rem;color:#4a5568;line-height:1.7;font-style:italic;margin-bottom:1rem}
+.testi-author{display:flex;align-items:center;gap:.75rem}
+.testi-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#e8a020,#ff6b35);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:1rem;flex-shrink:0}
+.testi-name{font-weight:700;font-size:.875rem;color:#0d1b2a}
+.testi-location{font-size:.75rem;color:#94a3b8}
+
+/* GUARANTEE */
+.guarantee{background:#fff;text-align:center}
+.guarantee-box{background:linear-gradient(135deg,#f8f9fa,#fff);border:2px solid #e8a020;border-radius:2rem;padding:3rem 2rem;max-width:600px;margin:2rem auto 0;box-shadow:0 8px 30px rgba(232,160,32,.1)}
+.guarantee-badge{font-size:4rem;margin-bottom:1rem}
+.guarantee-title{font-size:1.5rem;font-weight:900;color:#0d1b2a;margin-bottom:.75rem}
+.guarantee-text{font-size:.9rem;color:#64748b;line-height:1.7}
+
+/* FINAL CTA */
+.final-cta{background:linear-gradient(135deg,#0d1b2a,#1a3a5c);padding:5rem 1.5rem;text-align:center}
+.final-cta h2{font-size:clamp(1.75rem,4vw,2.75rem);font-weight:900;color:#fff;margin-bottom:1rem;letter-spacing:-.02em}
+.final-cta h2 span{color:#e8a020}
+.final-cta p{color:rgba(255,255,255,.7);font-size:1rem;max-width:500px;margin:0 auto 2rem;line-height:1.7}
+.btn-cta-lg{display:inline-block;background:linear-gradient(135deg,#ff6b35,#e8520a);color:#fff;font-size:1.2rem;font-weight:800;padding:1.1rem 3rem;border-radius:60px;box-shadow:0 8px 30px rgba(255,107,53,.45);transition:all .2s}
+.btn-cta-lg:hover{transform:translateY(-3px);box-shadow:0 14px 45px rgba(255,107,53,.6)}
+.btn-cta-lg small{display:block;font-size:.7rem;font-weight:500;opacity:.8;margin-top:.2rem}
+.price-note{margin-top:1.25rem;font-size:.8rem;color:rgba(255,255,255,.45)}
+
+/* FOOTER */
+.footer{background:#080f1a;padding:2.5rem 1.5rem;text-align:center}
+.footer-inner{max-width:860px;margin:0 auto}
+.footer-links{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:1.25rem}
+.footer-links a{font-size:.8rem;color:rgba(255,255,255,.4);transition:color .2s}
+.footer-links a:hover{color:#e8a020}
+.disclaimer{font-size:.72rem;color:rgba(255,255,255,.3);line-height:1.7;margin-bottom:1rem}
+.copyright{font-size:.72rem;color:rgba(255,255,255,.2)}
+
+/* AFFILIATE DISCLOSURE */
+.disclosure-bar{background:#fffbeb;border-bottom:1px solid #fde68a;padding:.6rem 1.5rem;text-align:center}
+.disclosure-bar p{font-size:.72rem;color:#92400e;max-width:900px;margin:0 auto}
+
+@media(max-width:768px){
+  .problem-grid,.benefits-grid,.steps,.ing-grid,.testi-grid{grid-template-columns:1fr}
+  .problem-stats{grid-template-columns:1fr 1fr}
+  .steps::before{display:none}
+  .header-inner{gap:.5rem}
+  .logo{font-size:1.1rem}
+}
+</style>
+</head>
+<body>
+
+<!-- AFFILIATE DISCLOSURE -->
+<div class="disclosure-bar">
+  <p>⚠️ <strong>Affiliate Disclosure:</strong> This page contains affiliate links. We may earn a commission if you purchase through our link, at no extra cost to you. Results may vary.</p>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">Endo<span>Peak</span></div>
+    <a href="https://endopeak24.com/c/order-now.php?hopId=3f0d9cd7-4932-4366-8008-c82823919cd6&&shield=052f3etb-gla5t04p4xoivsr7i" class="btn-header" target="_blank" rel="noopener">Order Now →</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">🌿 100% Natural Formula</div>
+    <h1>Reclaim Your <span>Peak</span> Performance Naturally</h1>
+    <p class="hero-sub">EndoPeak is a cutting-edge natural supplement formulated to support male vitality, energy, and confidence — with powerful plant-based ingredients.</p>
+    <a href="https://endopeak24.com/c/order-now.php?hopId=3f0d9cd7-4932-4366-8008-c82823919cd6&&shield=052f3etb-gla5t04p4xoivsr7i" class="btn-cta" target="_blank" rel="noopener">
+      Claim Your Discount Today
+      <small>60-Day Money Back Guarantee</small>
+    </a>
+    <div class="hero-stars">
+      <span class="stars">★★★★★</span>
+      <span>4.9/5 based on 2,700+ reviews</span>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><span class="trust-icon">🇺🇸</span> Made in USA</div>
+    <div class="trust-item"><span class="trust-icon">✅</span> GMP Certified</div>
+    <div class="trust-item"><span class="trust-icon">🌿</span> Natural Ingredients</div>
+    <div class="trust-item"><span class="trust-icon">🔬</span> Scientifically Formulated</div>
+    <div class="trust-item"><span class="trust-icon">💊</span> Non-GMO</div>
+    <div class="trust-item"><span class="trust-icon">🛡️</span> 60-Day Guarantee</div>
+  </div>
+</div>
+
+<!-- PROBLEM / SOLUTION -->
+<section class="section problem">
+  <div class="section-inner">
+    <div class="problem-grid">
+      <div class="problem-text">
+        <div class="section-label">Why EndoPeak?</div>
+        <h2 class="section-title">Men Over 40 Are Facing a Hidden Challenge</h2>
+        <p>As men age, natural hormone levels shift — leading to decreased energy, reduced stamina, and a noticeable dip in overall confidence and well-being.</p>
+        <p>EndoPeak was developed to address these challenges using a proprietary blend of natural ingredients that support the body's own processes.*</p>
+        <ul class="problem-list">
+          <li>Supports natural energy and vitality levels*</li>
+          <li>Promotes physical stamina and endurance*</li>
+          <li>Helps maintain healthy hormonal balance*</li>
+          <li>Supports overall male wellness and confidence*</li>
+          <li>Made with premium, nature-backed ingredients</li>
+        </ul>
+      </div>
+      <div class="problem-visual">
+        <p style="font-size:.85rem;color:rgba(255,255,255,.6);margin-bottom:1.5rem;text-transform:uppercase;letter-spacing:.08em;font-weight:600">EndoPeak by the numbers</p>
+        <div class="problem-stats">
+          <div>
+            <div class="stat">2.7K+</div>
+            <div class="stat-label">Satisfied customers</div>
+          </div>
+          <div>
+            <div class="stat">8</div>
+            <div class="stat-label">Natural ingredients</div>
+          </div>
+          <div>
+            <div class="stat">60</div>
+            <div class="stat-label">Day guarantee</div>
+          </div>
+          <div>
+            <div class="stat">4.9★</div>
+            <div class="stat-label">Average rating</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="section benefits">
+  <div class="section-inner">
+    <div class="text-center">
+      <div class="section-label">What You Get</div>
+      <h2 class="section-title">6 Key Benefits of EndoPeak</h2>
+      <p class="section-sub">A comprehensive approach to male wellness, designed to support your body from the inside out.*</p>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">⚡</div>
+        <div class="benefit-title">Sustained Energy</div>
+        <p class="benefit-desc">Support all-day energy levels without the crashes associated with stimulant-based products.*</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">💪</div>
+        <div class="benefit-title">Physical Vitality</div>
+        <p class="benefit-desc">Help maintain the physical stamina and strength that supports an active, confident lifestyle.*</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🧠</div>
+        <div class="benefit-title">Mental Clarity</div>
+        <p class="benefit-desc">Support focus, drive, and a positive mindset — key factors in overall male wellness.*</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">⚖️</div>
+        <div class="benefit-title">Hormonal Support</div>
+        <p class="benefit-desc">Formulated with ingredients traditionally associated with supporting healthy hormonal balance in men.*</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🌙</div>
+        <div class="benefit-title">Rest & Recovery</div>
+        <p class="benefit-desc">Support quality rest and recovery — a critical component of overall health and vitality.*</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🛡️</div>
+        <div class="benefit-title">Antioxidant Protection</div>
+        <p class="benefit-desc">Key ingredients provide antioxidant support, helping protect cells from everyday oxidative stress.*</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section how">
+  <div class="section-inner">
+    <div class="text-center">
+      <div class="section-label">Simple & Effective</div>
+      <h2 class="section-title">How EndoPeak Works</h2>
+      <p class="section-sub">Three simple steps to start your journey toward renewed vitality and confidence.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-title">Take Daily</div>
+        <p class="step-desc">Take EndoPeak consistently each day as directed to allow the natural ingredients to work with your body.*</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-title">Feel the Difference</div>
+        <p class="step-desc">Many users begin noticing improvements in energy and vitality within the first few weeks of consistent use.*</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-title">Live with Confidence</div>
+        <p class="step-desc">Experience a renewed sense of well-being, physical energy, and overall male confidence.*</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INGREDIENTS -->
+<section class="ingredients">
+  <div class="section-inner">
+    <div class="text-center">
+      <div class="section-label" style="color:#e8a020">Key Ingredients</div>
+      <h2 class="section-title">Nature-Backed Formula</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,.65)">EndoPeak combines powerful natural ingredients, each selected for its unique role in supporting male wellness.*</p>
+    </div>
+    <div class="ing-grid">
+      <div class="ing-card">
+        <div class="ing-name">Hawthorn Berry</div>
+        <p class="ing-desc">A powerful antioxidant traditionally used to support cardiovascular health and energy levels.*</p>
+      </div>
+      <div class="ing-card">
+        <div class="ing-name">Tribulus Terrestris</div>
+        <p class="ing-desc">A well-known botanical traditionally associated with supporting male vitality and physical performance.*</p>
+      </div>
+      <div class="ing-card">
+        <div class="ing-name">Chrysin</div>
+        <p class="ing-desc">A natural flavonoid found in plants, traditionally studied for its role in hormonal support.*</p>
+      </div>
+      <div class="ing-card">
+        <div class="ing-name">Epimedium</div>
+        <p class="ing-desc">Also known as "Horny Goat Weed," a classical herb used for centuries in traditional wellness practices.*</p>
+      </div>
+      <div class="ing-card">
+        <div class="ing-name">Saw Palmetto</div>
+        <p class="ing-desc">A popular plant extract widely recognized for its role in supporting healthy male hormone metabolism.*</p>
+      </div>
+      <div class="ing-card">
+        <div class="ing-name">Tongkat Ali</div>
+        <p class="ing-desc">A Southeast Asian herb traditionally used to support male energy, stamina, and overall vitality.*</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials">
+  <div class="section-inner">
+    <div class="text-center">
+      <div class="section-label">Real Stories</div>
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-sub">Thousands of men have made EndoPeak part of their daily wellness routine.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"I've tried a lot of supplements over the years, but EndoPeak is the first one where I actually noticed a real difference in my energy within the first two weeks. Highly recommend."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">M</div>
+          <div>
+            <div class="testi-name">Michael R.</div>
+            <div class="testi-location">Texas, USA • Verified Customer</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"At 52, I was feeling sluggish and low on motivation. After about a month with EndoPeak, I feel like myself again. My wife even noticed the difference. Worth every penny."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">D</div>
+          <div>
+            <div class="testi-name">David K.</div>
+            <div class="testi-location">Florida, USA • Verified Customer</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Clean ingredients, no jittery side effects, and it actually works. I've been using it for three months and plan to keep going. The 60-day guarantee gave me the confidence to try it."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">J</div>
+          <div>
+            <div class="testi-name">James T.</div>
+            <div class="testi-location">California, USA • Verified Customer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="section guarantee">
+  <div class="section-inner">
+    <div class="text-center">
+      <div class="section-label">Zero Risk</div>
+      <h2 class="section-title">60-Day Money Back Guarantee</h2>
+    </div>
+    <div class="guarantee-box">
+      <div class="guarantee-badge">🛡️</div>
+      <div class="guarantee-title">Try It Risk-Free for 60 Days</div>
+      <p class="guarantee-text">We stand behind EndoPeak with a full 60-day money-back guarantee. If for any reason you're not satisfied, simply contact us within 60 days of purchase for a full refund — no questions asked. You have absolutely nothing to lose.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <h2>Ready to Reclaim Your <span>Peak</span>?</h2>
+  <p>Join thousands of men who have made EndoPeak part of their daily wellness routine. Take the first step today.</p>
+  <a href="https://endopeak24.com/c/order-now.php?hopId=3f0d9cd7-4932-4366-8008-c82823919cd6&&shield=052f3etb-gla5t04p4xoivsr7i" class="btn-cta-lg" target="_blank" rel="noopener">
+    Get EndoPeak Now — Save Up to 80%
+    <small>Free Shipping + 60-Day Guarantee</small>
+  </a>
+  <p class="price-note">* Individual results may vary. This product is not intended to diagnose, treat, cure or prevent any disease.</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <p class="disclaimer">
+      * These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Results may vary from person to person. Individual results are not guaranteed. This website is an independent review and is not affiliated with or endorsed by the manufacturer. The information on this site is provided for informational purposes only and is not a substitute for professional medical advice.
+    </p>
+    <p class="copyright">© 2026 EndoPeak Review. All rights reserved. This page contains affiliate links.</p>
+  </div>
+</footer>
+
+</body>
+</html>
