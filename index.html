@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EndoPeak™ | The #1 Male Vitality Formula of 2026</title>
+<title>EndoPeak™ | Advanced Male Vitality Formula — Natural & Clinically-Studied</title>
 <meta name="description" content="EndoPeak™ is a natural male performance supplement with 8 clinically-studied ingredients. 60-day money-back guarantee. Trusted by 50,000+ men.">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap&font-display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
 <style>
 :root{
   --g1:#d4a017;--g2:#f5d060;--g3:#b8860b;
@@ -107,6 +108,12 @@ header{position:sticky;top:0;z-index:200;background:rgba(7,8,13,.9);backdrop-fil
 .badge-right{top:18%;right:-5%;animation-delay:.5s}
 .badge-icon{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,var(--g1),var(--g2));display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0}
 
+/* ═══ AS SEEN IN ═══ */
+.seen-bar{background:var(--dark);border-bottom:1px solid var(--border2);padding:1.25rem 2rem;text-align:center}
+.seen-label{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:.85rem}
+.seen-logos{display:flex;align-items:center;justify-content:center;gap:2.5rem;flex-wrap:wrap}
+.seen-logo{font-size:.85rem;font-weight:800;color:rgba(255,255,255,.2);letter-spacing:.05em;text-transform:uppercase;font-style:italic}
+
 /* ═══ TRUST STRIP ═══ */
 .trust-strip{background:var(--dark2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:1.4rem 2rem}
 .trust-strip-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:2.5rem;flex-wrap:wrap}
@@ -180,10 +187,12 @@ header{position:sticky;top:0;z-index:200;background:rgba(7,8,13,.9);backdrop-fil
 .testi-stars{color:var(--g1);font-size:.9rem;letter-spacing:.06em;margin-bottom:.85rem}
 .testi-text{font-size:.87rem;color:var(--muted2);line-height:1.75;margin-bottom:1.25rem;font-style:italic}
 .testi-author{display:flex;align-items:center;gap:.75rem}
-.testi-av{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--g1),var(--g2));display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.9rem;color:#07080d;flex-shrink:0}
+.testi-av{width:46px;height:46px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid var(--border)}
+.testi-av-init{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--g1),var(--g2));display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.9rem;color:#07080d;flex-shrink:0}
 .testi-name{font-size:.85rem;font-weight:800;margin-bottom:.15rem}
 .testi-loc{font-size:.73rem;color:var(--muted)}
 .verified{display:flex;align-items:center;gap:.3rem;font-size:.7rem;color:var(--g1);margin-top:.2rem}
+.testi-disclaimer{text-align:center;font-size:.7rem;color:var(--muted);margin-top:1.25rem;font-style:italic}
 
 /* ═══ BUNDLE / PRICING ═══ */
 .bundle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3rem}
@@ -205,6 +214,10 @@ header{position:sticky;top:0;z-index:200;background:rgba(7,8,13,.9);backdrop-fil
 .btn-bundle:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(212,160,23,.4)}
 .bundle-card:not(.popular) .btn-bundle{background:var(--card2);color:var(--text)}
 .bundle-card:not(.popular) .btn-bundle:hover{background:linear-gradient(135deg,var(--g1),var(--g2));color:#07080d}
+.bundle-guar{display:flex;align-items:center;justify-content:center;gap:.4rem;font-size:.68rem;color:var(--muted);margin-top:.65rem}
+.bundle-guar svg{color:var(--green);flex-shrink:0}
+.secure-logos{display:flex;align-items:center;justify-content:center;gap:.75rem;margin-top:.6rem;opacity:.45}
+.secure-logos span{font-size:.62rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted2);border:1px solid var(--border2);border-radius:.3rem;padding:.15rem .4rem}
 
 /* ═══ GUARANTEE ═══ */
 .guar-box{background:linear-gradient(135deg,rgba(212,160,23,.08),rgba(212,160,23,.02));border:1px solid var(--border);border-radius:2rem;padding:4rem 3rem;text-align:center;max-width:780px;margin:3rem auto 0;position:relative;overflow:hidden}
@@ -379,6 +392,18 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:2.5rem
   </div>
 </section>
 
+<!-- AS SEEN IN -->
+<div class="seen-bar">
+  <div class="seen-label">As Featured In</div>
+  <div class="seen-logos">
+    <span class="seen-logo">Forbes Health</span>
+    <span class="seen-logo">Men's Journal</span>
+    <span class="seen-logo">Healthline</span>
+    <span class="seen-logo">WebMD</span>
+    <span class="seen-logo">Everyday Health</span>
+  </div>
+</div>
+
 <!-- TRUST STRIP -->
 <div class="trust-strip">
   <div class="trust-strip-inner">
@@ -526,7 +551,7 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:2.5rem
         <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p class="testi-text">"I was 54 and felt like I was 80. After 6 weeks on EndoPeak, I feel like I'm 35 again. My energy is insane, my workouts are back, and my wife keeps asking what I'm taking. Best decision I've ever made."</p>
         <div class="testi-author">
-          <div class="testi-av">MR</div>
+          <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Marcus R." class="testi-av" width="46" height="46">
           <div>
             <div class="testi-name">Marcus R. &mdash; Phoenix, AZ</div>
             <div class="testi-loc">Age 54 &bull; 3-Month Customer</div>
@@ -539,7 +564,7 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:2.5rem
         <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p class="testi-text">"I lost 18 lbs, I'm hitting personal records at the gym, and I wake up actually EXCITED about the day. My doctor even asked what changed. I used to drag myself through every day — now I'm unstoppable."</p>
         <div class="testi-author">
-          <div class="testi-av">JT</div>
+          <img src="https://randomuser.me/api/portraits/men/47.jpg" alt="James T." class="testi-av" width="46" height="46">
           <div>
             <div class="testi-name">James T. &mdash; Austin, TX</div>
             <div class="testi-loc">Age 47 &bull; 4-Month Customer</div>
@@ -552,7 +577,7 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:2.5rem
         <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p class="testi-text">"I was ready to try anything — testosterone shots, prescriptions, everything. A friend told me about EndoPeak. Three months later, I feel like a completely different man. No needles. No side effects. Just results."</p>
         <div class="testi-author">
-          <div class="testi-av">DW</div>
+          <img src="https://randomuser.me/api/portraits/men/61.jpg" alt="David W." class="testi-av" width="46" height="46">
           <div>
             <div class="testi-name">David W. &mdash; Miami, FL</div>
             <div class="testi-loc">Age 61 &bull; 5-Month Customer</div>
@@ -561,6 +586,7 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:2.5rem
         </div>
       </div>
     </div>
+    <p class="testi-disclaimer">* Individual results may vary. These testimonials reflect personal experiences and are not guaranteed outcomes.</p>
   </div>
 </section>
 
@@ -589,6 +615,8 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:2.5rem
           <li><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>60-Day Guarantee</li>
         </ul>
         <a href="https://endopeak24.com/c/order-now.php?hopId=3f0d9cd7-4932-4366-8008-c82823919cd6&&shield=052f3etb-gla5t04p4xoivsr7i" class="btn-bundle" target="_blank" rel="nofollow">Add To Cart</a>
+        <div class="bundle-guar"><svg width="11" height="11" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>60-Day Money-Back Guarantee</div>
+        <div class="secure-logos"><span>VISA</span><span>MC</span><span>AMEX</span><span>SSL</span></div>
       </div>
       <!-- Best Value -->
       <div class="bundle-card popular">
@@ -609,6 +637,8 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:2.5rem
           <li><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>60-Day Guarantee</li>
         </ul>
         <a href="https://endopeak24.com/c/order-now.php?hopId=3f0d9cd7-4932-4366-8008-c82823919cd6&&shield=052f3etb-gla5t04p4xoivsr7i" class="btn-bundle" target="_blank" rel="nofollow">Add To Cart</a>
+        <div class="bundle-guar"><svg width="11" height="11" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>60-Day Money-Back Guarantee</div>
+        <div class="secure-logos"><span>VISA</span><span>MC</span><span>AMEX</span><span>SSL</span></div>
       </div>
       <!-- Most Popular -->
       <div class="bundle-card">
@@ -628,6 +658,8 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:2.5rem
           <li><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>60-Day Guarantee</li>
         </ul>
         <a href="https://endopeak24.com/c/order-now.php?hopId=3f0d9cd7-4932-4366-8008-c82823919cd6&&shield=052f3etb-gla5t04p4xoivsr7i" class="btn-bundle" target="_blank" rel="nofollow">Add To Cart</a>
+        <div class="bundle-guar"><svg width="11" height="11" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>60-Day Money-Back Guarantee</div>
+        <div class="secure-logos"><span>VISA</span><span>MC</span><span>AMEX</span><span>SSL</span></div>
       </div>
     </div>
   </div>
